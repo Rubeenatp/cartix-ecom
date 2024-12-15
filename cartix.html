@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <style>
+           .container{
+                display: flex;
+                flex-direction: column;
+    
+            }
+            header{
+                height: 6vh;
+                background-color: rgb(69, 122, 124);
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                top:0;
+                right:0;
+                padding:10px 10px;
+                z-index: 20;
+                align-content: center;
+                position: fixed;
+                justify-content: space-between;
+                
+            }
+            .logo-img{
+                display: flex;
+                height: 6vh;
+                flex:2;
+                align-items:center;
+                justify-content: right;
+
+            }
+            .logo{
+                width: 100px;
+                height: 100px;
+                object-fit: contain;
+            }
+            .search{
+                flex:3;
+            }
+            .main{
+                display: flex;
+                flex:5;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            .main>div{
+                align-items: center;
+                color:white;
+    
+            }
+
+            nav{
+                height:170px;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: row;
+                background-color:white;
+                align-items: center;
+                align-content: center;
+            }
+            .nave-items{
+                display: flex;
+                height:80px;
+                width: 50px;
+                align-items: center;
+                flex-direction: row;
+                background-color: white;
+           
+              
+            }
+            .top{
+                height:80px;
+                width: 100px;
+                margin: 0;
+                text-align: center;
+            }
+
+            h3{
+                text-align: center;
+                font-size: 10px;
+                margin: 0;
+            }
+                
+            .banner{
+                height: 350px;
+                background-color: rgb(252, 253, 253);
+                background-image: url(cart/images20.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+
+            }
+            .content{
+                display: flex;
+                width: 100%;
+                flex: 1;
+                background-color:rgb(248, 245, 245);
+                flex-direction: column;
+            }
+            .items{
+                display: flex;
+                width: 100%px;
+                height: 300px;
+                background-color: white(243, 245, 245);
+                flex-direction: row;
+                border-radius: 5px;
+                justify-content: center;
+                padding: 5px 5px;
+               
+            }
+           .category{
+                flex:1;
+                width: 300px;
+                border: 1px solid rgb(226, 226, 226);
+                border-radius: 5px;
+                padding: 10px 20px;
+                background-color: white;
+               
+
+        
+            }
+            .category-items{
+                display: flex;
+                flex:5;
+                border: 1px solid rgb(231, 231, 231);
+                background-color: white(238, 235, 231);
+                flex-direction: row;
+                border-radius: 5px;
+                box-shadow: 2px;
+                padding: 2px;
+            
+            }
+            .product{
+                display: flex;
+                flex: 1;
+                border: 1px solid rgb(255, 253, 253);
+                width: 100px;
+                justify-content: space-around;
+                flex-direction: column;
+                text-align: center;
+              
+
+            }
+            img{
+                height: 200px;
+                width: 200px;
+                object-fit: contain;
+            }
+           
+            p{
+                font-size: 12px;
+                font-weight: bold;
+            }
+        
+            footer{
+                height: 30vh;
+                display: flex;
+                flex-direction: row;
+                background-color:rgb(121, 119, 119) ;
+            }
+            footer>div{
+                flex: 1;
+                color: white;
+            }
+            @media screen and (max-width:700px) 
+            { .banner{
+                display: none;
+            }
+              
+            }
+            
+        </style>
+
+    </head>
+    <body>
+       <div class="container">
+        <header>
+            <div class="logo-img">
+    
+                <img class="logo" src="cart/cartixlogo.png" width="100px" height="174x" pointer>
+    
+            </div>
+            <div class="search"></div>
+            <div class="main">
+            <div>login</div>
+            <div>become a seller</div>
+            <div>more</div>
+            <div>cart</div>
+            
+            </div>
+           
+    
+        </header>
+        <nav>
+            <div class="nav-item">
+                <img class="top" src="cart/images (14).jpeg" height="60px" alt="">
+                <h3>Gift</h3>
+            </div>
+    
+                <div class="nav-item">
+                    <img  class="top" src="cart/images (18).jpeg">
+                    <h3>mobile</h3>
+                    </div>
+                <div class="nav-item">
+                    <img class="top" src="cart/images (15).jpeg" height="60px" alt="">
+                     <h3>Electronics</h3>
+                    </div>
+                <div class="nav-item">
+                    <img class="top" src="cart/images (24).jpeg" height="60px" alt="">
+                    <h3>Fashion</h3>
+                </div>
+                <div class="nav-item">
+                    <img class="top" src="cart/mixi.jpg" height="60px" alt="">
+                    <h3>Kitchen</h3>
+                </div>
+                <div class="nav-item">
+                    <img class="top"  src="cart/images (14).jpeg" height="80px" alt="">
+                   <h3>Gift</h3>
+                </div>
+                <div class="nav-item">
+                    <img class="top" src="cart/images (7).jpeg" height="80px" alt="">
+                    <h3>Spots</h3>
+                </div>
+                <div class="nav-item">
+                    <img class="top" src="cart/images (12).jpeg" height="80px" alt="">
+                   <h3> Baby</h3>
+                </div>
+                <div class="nav-item">
+                    <img class="top" src="cart/images (3).jpeg" height="80px" alt="">
+                   <h3> Grocery</h3>
+                </div>
+                <div class="nav-item">
+                    <img class="top" src="cart/images (5).jpeg" height="80px" alt="">
+                   <h3> Beauty</h3>
+                </div>
+        </nav>
+       
+         <div class="banner">
+            </div>
+         <div class="content">
+            <div class="items">
+                <div style="background-image: url(cart/electroni2.jpg); background-size: cover; background-repeat: no-repeat;" class ="category">
+                   
+                    <h2 style="text-align: center; color: rgb(7, 10, 12); align-items: center;">Electronics</h2>
+                </div>
+                <div class="category-items">
+                    <div class="product">
+                        <img src="cart/camara.jpg" height="100px" alt="">
+                        <h4>camara</h4>
+                        <p>FUJIFilm black</p>
+                    </div>
+                    <div class="product">  
+                         <img src="cart/images (19).jpeg" height="100px" alt="">
+                         <h4>Mouse</h4>
+                         <p>Logitech M650</p>
+                        </div>
+                    <div class="product">
+                        <img src="cart/images (21).jpeg" height="100px" alt="">
+                        <h4>MOTOROLA Tab</h4>
+                        <p>2GB ram</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/laptop.jpg" height="100px" alt="">
+                        <h4>Crome Book</h4>
+                        <p>2Gb Ram</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/images (18).jpeg" height="100px" alt="">
+                        <h4>Real me Phone</h4>
+                        <p>2GB ram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <div style="background-image: url(cart/image12.jpeg); background-size: cover; background-repeat: no-repeat;" class ="category">
+
+                    <h2 style=" align-items: center; text-align: center; color: rgb(3, 3, 3);">Fashion</h2>
+                </div>
+                <div class="category-items">
+                    <div class="product">
+                        <img src="cart/images (28).jpeg" height="100px" alt="">
+                        <h4>Shirt</h4>
+                        <p>Plain White Shirt</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/images (23).jpeg" height="100px" alt="">
+                        <h4>Kids Frock</h4>
+                        <p>Blue Flaral Print</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/image5.jpg" height="100px" alt="">
+                        <h4>Men Shoe</h4>
+                        <p>Black Men Shoe</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/images (27).jpeg" height="100px" alt="">
+                        <h4>Women Sandals</h4>
+                        <p>Black semi Flat</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/images (25).jpeg" height="100px" alt="">
+                        <h4>Women Hand Bag</h4>
+                        <p>White Fashion Bag</p>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <div style="background-image: url(cart/image11.jpeg); background-size: cover; background-repeat: no-repeat;" class ="category">
+                   
+                    <h2 style="text-align: center;">beauty products</h2>
+                </div>
+                <div class="category-items">
+                    <div class="product">
+                        <img src="cart/lakme.jpg" height="100px" alt="">
+                        <h4>Lakmi Peach Milk</h4>
+                        <p>Light Weight Moisturiser</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/himalaya.jpeg" height="100px" alt="">
+                        <h4>Himalaya Purifier</h4>
+                        <p>Neem Face Wash</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/facecanada.jpg" height="100px" alt="">
+                        <h4>Faces Canada foundation</h4>
+                        <p>9%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/rosemry.jpg" height="100px" alt="">
+                        <h4>ALPS Rose marry Water</h4>
+                        <p>10% offer</p>
+                    </div>
+                    <div class="product"> 
+                        <img src="cart/liquidmate.jpg" height="100px" alt="">
+                        <h4>Hudha Beauty Liquidmate</h4>
+                        <p>12%offer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <div style="background-image: url(cart/images\ \(14\).jpeg); background-size: cover; background-repeat: no-repeat;" class ="category">
+            
+                    <h2 style="text-align: center;">Gift</h2>
+                </div>
+                <div class="category-items">
+                    <div class="product">
+                        <img src="cart/images (31).jpeg" height="100px" alt="">
+                        <h4>Teddy Bear cream white</h4>
+                        <p>20%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/images (29).jpeg" height="150px" alt="">
+                        <h4>Women stylish hand Bag</h4>
+                        <p>45%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/ring.jpeg" height="150px" alt="">
+                        <h4>silver Ring</h4>
+                        <p>5%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/image6.jpg" height="150px" alt="">
+                       <h4>Sunglass 2 items</h4>
+                       <p>20%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/image7.jpg" height="150px" alt="">
+                        <h4>uv protected Sunglass</h4>
+                        <p>30%offer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <div style="background-image: url(cart/health2.jpg); background-size: cover; background-repeat: no-repeat;" class ="category">
+                    <h2 style="text-align: center;">Health care</h2>
+                    </h2>
+                </div>
+                <div class="category-items">
+                    <div class="product">
+                        <img src="cart/thethascop.jpg" height="150px" alt="">
+                        <h3>Dueal Head Stethescope</h3>
+                        <p>20%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/thermometer.jpg" height="150px" alt="">
+                        <h4>Thermon ORG Thermometer</h4>
+                        <p>10%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/image9.jpeg" height="150px" alt="">
+                        <h4> Luggage weight machine</h4>
+                        <p>10%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/images (50).jpeg" height="150px" alt="">
+                        <h4>Blood Pressure Machine</h4>
+                        <p>30%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/mask.jpeg" height="150px" alt="">
+                        <h4>Disposable Mask</h4>
+                        <p>35%offer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <div style="background-image: url(cart/image17.jpeg); background-size: cover; background-repeat: no-repeat;" class ="category">
+                 
+                    <h2 style="text-align: center;">Sports Equipments</h2>
+                </div>
+                <div class="category-items">
+                    <div class="product">
+                        <img src="cart/images (36).jpeg" height="150px" alt=""> 
+                        <h4>Badminton Racket</h4>
+                        <p>25%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/images (37).jpeg" height="150px" alt="">
+                        <h4>Cricket Ball</h4>
+                        <p>50%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/images (38).jpeg" height="150px" alt="">
+                        <h4>sports bike Helmet</h4>
+                        <p>22%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/images (39).jpeg" height="150px" alt="">
+                        <h4>Sports Shoe Blue</h4>
+                        <p>28%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/images (40).jpeg" height="150px" alt="">
+                        <h4>Skating Shoe</h4>
+                        <p>15%offer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <div style="background-image: url(cart/image19.jpg); background-size: cover; background-repeat: no-repeat;" class ="category">
+                    <h2 style="text-align: center;">Kitchen Essential</h2>
+                </div>
+                <div class="category-items">
+                    <div class="product">
+                        <img src="cart/mixi.jpg" height="100px" alt="">
+                        <h4>Philips Mixer Grinder</h4>
+                        <p>26%</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/images (42).jpeg" height="100px" alt="">
+                        <h4>Tupperwere containers</h4>
+                        <p>21%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/images (45).jpeg" height="100px" alt="">
+                        <h4>Drainer Kitchen Rack</h4>
+                        <p>33%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/images (46).jpeg" height="100px" alt="">
+                        <h4>Melamine Serving bowl</h4>
+                        <p>18%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/images (43).jpeg" height="100px" alt="">
+                        <h4>Storage Box</h4>
+                        <p>40% offer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <div style="background-image: url(cart/babyproduct.jpg); background-size: cover; background-repeat: no-repeat;" class ="category">
+                   
+                    <h2 style="text-align: center;">Baby Product</h2>
+                </div>
+                <div class="category-items">
+                    <div class="product">
+                        <img src="cart/shoe2.jpg" height="100px" alt="">
+                        <h4>Boy white Shoe</h4>
+                        <p>35%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/images (35).jpeg" height="100px" alt="">
+                        <h4>Supples baby Play Gym</h4>
+                        <p>28%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/images (34).jpeg" height="100px" alt="">
+                        <h4>Baby sitting chair</h4>
+                        <p>26%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/image50.jpeg" height="100px" alt="">
+                        <h4>baby cycle bkue</h4>
+                        <p>32%offer</p>
+                    </div>
+                    <div class="product">
+                        <img src="cart/image51.jpeg" height="100px" alt="">
+                        <h4>Unbrekable Toy Car</h4>
+                        <p>22%offer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <h4 style="font-weight: bold;">About</h3>
+                <h4>contact us</h4>
+                <h4>About us</h4>
+                <h4>Careers</h4>
+                <h4></h4>
+            </div>
+            <div>
+                <h4 style="font-weight: bold;">Help</h3>
+                <h4>Payment</h4>
+                <h4> Shipping</h4>
+                <h4> Cancellation</h4>
+                <h4>Return</h4>
+            </div>
+            <div>
+                <h4 style="font-weight: bold;">Policy</h3>
+                <h4>Return Policy</h4>
+                <h4>Terms of use</h4>
+                <h4></h4>
+                <h4></h4>
+            </div>
+            <div>
+                <h4 style="font-weight: bold;">Social</h3>
+                <h4>Facebook</h4>
+                <h4>Twiter</h4>
+                <h4>Youtube</h4>
+                <h4></h4>
+            </div>
+            <div>
+                <h4 style="font-weight: bold;">Mail us</h3>
+                <h4>carttip privet limited</h4>
+                <h4>malappuram</h4>
+                <h4></h4>
+                <h4></h4>
+            </div>
+            <div>
+                <h4 style="font-weight: bold;">Adess</h3>
+                <h4>Abc Nager</h4>
+                <h4>Priyam</h4>
+                <h4>ab</h4>
+            
+            </div>
+        </footer>
+       </div>
+    </body>
+</html>
